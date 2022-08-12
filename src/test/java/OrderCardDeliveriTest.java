@@ -21,6 +21,7 @@ public class OrderCardDeliveriTest {
     public void setup() {
         open("http://localhost:9999");
     }
+
     public String generateDate(int days, String pattern) {
         return LocalDate.now().plusDays(days).format(DateTimeFormatter.ofPattern(pattern));
     }
